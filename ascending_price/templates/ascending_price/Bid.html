@@ -1,0 +1,129 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+
+{% endblock %}
+
+
+{% block title %}
+<h3  align="center" > 拍卖阶段（第{{ which_round }}轮）
+ </h3>
+{% endblock %}
+
+{% block content %}
+
+<div class="ac_main_body">
+    <div class="private_value">
+        <p>你的回收价: {{ pv }} 实验币</p>
+    </div>
+    <!-- 倒计时显示区域 -->
+    <div class="countdown" id="countdown"> </div>
+    <div class="current_price" id="currentPrice"></div>
+</div>
+
+<hr>
+
+<div class="ac_main_body">
+    <div class="players_left_num" id="playersLeftNum"></div>
+
+    <h3  align="center" >
+            <button class="next">点我退出</button>
+     </h3>
+    <button class="next_not_visible" style="display: none;"> next page </button>
+    <div id="winnerMessage"></div>
+</div>
+
+
+<script>
+
+var nextPageButton = document.querySelector('button.next');
+var nextPageButtonNotVisible = document.querySelector('button.next_not_visible');
+var playersLeftNumElement = document.getElementById('playersLeftNum');
+var players_left_num = 4;
+var countdownElement = document.getElementById('countdown');
+
+var counter = 3; // 倒计时开始的数字
+var currentPriceElement = document.getElementById('currentPrice');
+var current_price = {{ start_price }};
+var winner_bid = -1;
+
+
+function updateEverything() {
+    counter -= 1;
+
+    if (counter < 1) {
+        counter = 3;
+
+        current_price += 1;
+
+        {% if display_players_num %}
+            if (players_left_num === 1) {
+                nextPageButtonNotVisible.click();
+                return;
+            }
+            playersLeftNumElement.innerText = "剩余玩家数量：" + players_left_num;
+        {% else %}
+        {% endif %}
+
+        currentPriceElement.innerText = "卡片当前价格水平：" + current_price + "实验币";
+
+        if (current_price === 151) {
+            nextPageButton.click();
+        }
+    }
+
+    countdownElement.innerText = "倒计时：" + counter;
+
+}
+
+function initPlayersLeftNum() {
+    playersLeftNumElement.innerText = "剩余玩家数量：" + players_left_num;
+}
+
+function initCurrentPrice() {
+    currentPriceElement.innerText = "卡片当前价格水平：" + current_price + "实验币";
+}
+
+function sendValue() {
+    current_price += 1;
+    liveSend(current_price);
+}
+
+function sendValueWinner() {
+    winner_bid = current_price + 1;
+    liveSend(winner_bid);
+}
+
+function liveRecv(data) {
+    players_left_num = data;
+}
+
+nextPageButton.addEventListener('click', function() {
+    sendValue();
+});
+
+nextPageButtonNotVisible.addEventListener('click', function() {
+    sendValueWinner();
+});
+
+
+
+// 初始化
+(function() {
+    setInterval(updateEverything, 1000);
+
+    {% if display_players_num %}
+        initPlayersLeftNum();
+    {% else %}
+    {% endif %}
+
+    initCurrentPrice();
+    updateEverything();
+
+})();
+
+
+</script>
+
+{% endblock %}

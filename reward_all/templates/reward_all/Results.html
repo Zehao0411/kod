@@ -1,0 +1,43 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+
+{% endblock %}
+
+
+{% block title %}
+ <h3  align="center" > 最终收益
+ </h3>
+{% endblock %}
+
+{% block content %}
+
+{% if ac_tail %}
+<p>
+    你一共参与了4个部分的实验。<p>
+    在第一部分的拍卖实验中，你获得的实验报酬将会由实验人员后续计算。<p>
+    在第二部分的卡片分类测验中，你一共正确完成了{{ wisc_correct_num }}道题，获得收入{{ wisc_payoff }}元。<p>
+    在第三部分的数字难题测验中，你一共正确完成了{{ math_puzzles_correct_num }}道题，获得收入{{ math_puzzles_payoff }}元。<p>
+    在最后一部分的拍卖实验中，你一共获得了{{ ascending_ecu }}实验币，等于{{ ascending_payoff }}元。
+</p>
+    <hr>
+<p>
+    相加上述部分的收入，以及出场费{{ show_up_fee }}元，你最终获得的总收益是（{{ final_payoff }} + 第一部分的收益）元。
+    实验报酬将在近期发放，感谢您参与本次实验。
+</p>
+{% else %}
+<p>
+    你目前一共参与了3个部分的实验。<p>
+    在第一部分的拍卖实验中，你一共获得了{{ ascending_ecu }}实验币，等于{{ ascending_payoff }}元。
+    在第二部分的卡片分类测验中，你一共正确完成了{{ wisc_correct_num }}道题，获得收入{{ wisc_payoff }}元。<p>
+    在第三部分的数字难题测验中，你一共正确完成了{{ math_puzzles_correct_num }}道题，获得收入{{ math_puzzles_payoff }}元。<p>
+</p>
+    <hr>
+<p>
+    相加上述部分的收入，以及出场费{{ show_up_fee }}元，你目前获得的总收益是{{ final_payoff }}元。
+    <b>实验尚未结束，请等待实验人员的后续指示。</b>
+</p>
+{% endif %}
+
+{% endblock %}

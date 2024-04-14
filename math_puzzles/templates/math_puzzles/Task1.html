@@ -1,0 +1,27 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+
+{% endblock %}
+
+
+{% block title %}
+ <h3  align="center" > 数字难题-第1道
+ </h3>
+{% endblock %}
+
+{% block content %}
+
+<p>
+    请找到下面数字的规律，猜测下一个数字。
+    <p>
+    1, 1, 2, 3, 5, 8, 13, 21
+</p>
+
+{{ formfields }}
+
+<h3  align="center" >
+<button class="nexttab btn-primary btn next">下一步</button>
+ </h3>
+{% endblock %}

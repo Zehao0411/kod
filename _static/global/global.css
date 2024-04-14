@@ -1,0 +1,42 @@
+._otree-content{
+    position: relative;
+}
+
+.ac_main_body{
+    padding: 50px;
+}
+.ac_lower_body{
+    padding: 30px;
+}
+
+.private_value{
+    position: absolute;
+    font-size: 18px;
+    left: 10px;
+}
+
+.current_price{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.countdown {
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+
+.players_left_num{
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.second_main_body{
+    padding: 50px;
+    font-size: 24px;
+}

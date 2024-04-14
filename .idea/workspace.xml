@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="edf54844-0129-450e-8b5c-a1963bbcd514" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/auctions_program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_rooms/CCBEF404A.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ascending_price/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ascending_price/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ascending_price/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ascending_price/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ascending_price/templates/ascending_price/Bid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ascending_price/templates/ascending_price/Feedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ascending_price/templates/ascending_price/Start.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math_puzzles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math_puzzles/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math_puzzles/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math_puzzles/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math_puzzles/templates/math_puzzles/Instructions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math_puzzles/templates/math_puzzles/Results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math_puzzles/templates/math_puzzles/Task1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math_puzzles/templates/math_puzzles/Task2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math_puzzles/templates/math_puzzles/Task3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_ac/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_ac/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_ac/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_ac/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_ac/templates/reward_ac/Reward.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_all/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_all/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_all/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_all/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_all/templates/reward_all/Results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_sp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_sp/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_sp/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_sp/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reward_sp/templates/reward_sp/Reward.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_price/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_price/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_price/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_price/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_price/templates/second_price/Bid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_price/templates/second_price/Feedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/second_price/templates/second_price/Start.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_ac/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_ac/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_ac/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_ac/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_ac/templates/start_ac/BidTraining.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_ac/templates/start_ac/FeedbackTraining.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_ac/templates/start_ac/Instructions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_ac/templates/start_ac/InstructionsTraining.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_all/Instructions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_all/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start_sp/Instructions.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2eiGtD9mZbnjynt3HR0EfDiiDXW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Master 2024 Spr/swufe/kOD/auction/materials/raw_data_processing&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Master 2024 Spr\swufe\kOD\auction\auctions_program\ascending_price\templates\ascending_price" />
+      <recent name="E:\Master 2024 Spr\swufe\kOD\auction\auctions_program\second_price\templates\second_price" />
+      <recent name="E:\Master 2024 Spr\swufe\kOD\auction\auctions_program\start_ac\templates\start_ac" />
+      <recent name="E:\Master 2024 Spr\swufe\kOD\auction\auctions_program\start_ac" />
+      <recent name="E:\Master 2024 Spr\swufe\kOD\auction\auctions_program" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Master 2024 Spr\swufe\kOD\auction\auctions_program\reward_sp\templates\reward_sp" />
+      <recent name="E:\Master 2024 Spr\swufe\kOD\auction\auctions_program\second_price\templates\second_price" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="auctions_program" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scratch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="edf54844-0129-450e-8b5c-a1963bbcd514" name="Changes" comment="" />
+      <created>1712380198011</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712380198011</updated>
+    </task>
+    <servers />
+  </component>
+</project>

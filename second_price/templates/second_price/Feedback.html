@@ -1,0 +1,31 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+
+{% endblock %}
+
+
+{% block title %}
+<h3  align="center" > 报酬页面（第{{ which_round }}轮）
+ </h3>
+{% endblock %}
+
+{% block content %}
+
+
+<p>  你的私人价值是: {{ pv }} 元 </p>
+<p>  你的出价是: {{ bid }} 元 </p>
+<p>  本轮的最高出价: {{ highest_bid_this_round }} 元 </p>
+
+
+<p>  你在本轮的收益是: {{ payoff_this_round }} 元 </p>
+
+
+{{ formfields }}
+
+
+<h3  align="center" >
+<button class="nexttab btn-primary btn next">下一步</button>
+ </h3>
+{% endblock %}

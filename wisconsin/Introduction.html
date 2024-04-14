@@ -1,0 +1,23 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    <center>卡片分类测验</center>
+{% endblock %}
+{% block content %}
+<div class="card bg-light m-3">
+<div class="card-body">
+        <h5 class="card-title">实验说明</h5>
+        <p class="card-text">
+            每一页，你需要在屏幕上半部分的四张卡牌中猜测一张与屏幕下半部分的卡牌匹配。</p><p class="card-text">
+            匹配规则为基于相同颜色或形状或物品数量。</p><p class="card-text">
+            每次猜测并选择后会被告知是否正确，然而匹配规则会随着游戏进行而周期性轮换。
+        </p>
+    <p>如果你答对小于6道题，你将获得￥1；如果你答对6~7道题，你将获得￥2；如果你答对题目大于7道，你将获得￥3。</p>
+</div>
+</div>
+<center>
+<!--<button type="submit" id="bt" disabled="disabled" class="otree-btn-next btn btn-primary" value="请仔细阅读，还剩10秒">请仔细阅读，还剩10秒</button>-->
+ <input type="submit" id="bt" class="otree-btn-next btn btn-primary" value="下一页" />
+</center>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+
+{% endblock %}
+
+
+{% block title %}
+<h3  align="center" > 报酬页面（第{{ which_round }}轮）
+ </h3>
+{% endblock %}
+
+{% block content %}
+
+<p>  你的虚拟卡片回收价是: {{ pv }} 实验币 </p>
+
+{% if winner != my_id %}
+    <p> 在本轮拍卖中，你没有获得虚拟卡片。你在这个价格水平退出了：{{ bid }} 实验币 </p>
+{% else %}
+    <p> 在本轮拍卖中，你得到了虚拟卡片。</p>
+{% endif %}
+
+{% if winner != -1 %}
+    <p>  本轮虚拟卡片成交的价格水平: {{ winning_price_this_round }} 实验币 </p>
+{% else %}
+    <p> 由于在虚拟卡片的价格水平为 {{ winning_price_this_round }} 实验币时，所有参与者均退出，因此没有人获得卡片 </p>
+{% endif %}
+
+<p>  你在本轮的收益是: {{ ecu_this_round }}实验币，等于{{ payoff_this_round }}元 </p>
+
+
+<h3  align="center" >
+<button class="nexttab btn-primary btn next">下一步</button>
+ </h3>
+{% endblock %}
